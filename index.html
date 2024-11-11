@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Movie Booking App</h1>
+    <h2>Total Bookings: <span id="bookingCount">0</span></h2>
+
+    <!-- Find booking by seat number -->
+  
+  
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+        <label for="seat">Seat No</label>
+        <input type="text" name="seat" id="seat" />
+      
+        <button type="submit">ADD</button>
+      </form>
+      <ul id="bookingList"></ul>
+
+      <!-- Find Booking Section -->
+      <div>
+        <input type="text" id="findSeat" placeholder="Find by Seat No" />
+        <button id="findButton">Find Booking</button>
+        <ul id="findResultsList"></ul>
+      </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
